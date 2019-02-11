@@ -1,0 +1,1 @@
+start polarishub/polarishub.exe runserver 0.0.0.0:8000
