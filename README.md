@@ -2,7 +2,7 @@
 A p2p file transfer program via LAN.
 
 ## Implementation
-This program is implemented with Django Framework. No other external libraries are required.
+This program is implemented with Django Framework. External libraries required: MyQR for generating QR code.
 
 ## Usage
 1. Before start using it, run setup.py or dist/setup/setup.exe or simply dist/setup.bat to initialize your PolarisHub.
