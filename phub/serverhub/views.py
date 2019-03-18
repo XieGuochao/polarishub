@@ -24,7 +24,11 @@ except:
     
 
 def getIP():
-    return socket.gethostbyname(socket.gethostname())
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("8.8.8.8", 80))
+    resIP = s.getsockname()[0]
+    s.close()
+    return resIP
 
 def check(request):
     if settings != None:
