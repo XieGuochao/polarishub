@@ -1,7 +1,7 @@
 from MyQR import myqr
 import os
 
-def generateCode(url, filename):
+def generateCode(url, filename = "qrcode.png"):
     version, level, qr_name = myqr.run(
         url,
         version = 1,
