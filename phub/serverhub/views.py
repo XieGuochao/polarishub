@@ -50,7 +50,7 @@ def getFiles(request):
     if FILEROOT!= None:
         files = list(os.walk(FILEROOT))[0][2]
         filesmd5 = name2md5(files)
-        htmlpart = "\n".join(["<a href=\"file/"+filesmd5[i]+"\" target=\"_blank\">"+files[i]+"</a> \
+        htmlpart = "\n".join(["<a href=\"file/"+filesmd5[i]+"\" target=\"_blank\" download=\""+files[i]+"\">"+files[i]+"</a> \
             <a href=\"getQR?url=http://" + getIP() + ":" + str(port) +"/file/" + filesmd5[i] + "&filename=qrcode.png\"><button>Share</button></a>\
                 <br>" for i in range(len(files))])
         return HttpResponse(
