@@ -7,6 +7,7 @@ import socket
 import api
 from serverhub.myqrcode import generateCode
 import hashlib
+from requests.utils import quote
 
 # Create your views here.
 
@@ -92,7 +93,7 @@ def download(request, filename=None):
             return Http404()
         else: 
             filename = files[filesmd5.index(filename)]
-            # print("!!!!\n", filename, "\n!!!!")
+            print("!!!!\n", filename, "\n!!!!")
             if filename in passwords.keys():
                 if password is None:
                     print(filename, type(filename))
@@ -127,7 +128,7 @@ def download(request, filename=None):
             f = open(join(FILEROOT, filename), 'rb')
             response = FileResponse(f)
             response['Content-Type']='application/octet-stream'  
-            response['Content-Disposition']='attachment;filename="{}"'.format(filename)
+            response['Content-Disposition']='attachment;filename="{}"'.format(quote(filename, safe=''))
             return response
     return Http404()  
     # except:
