@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: polarishub
-Version: 0.9.0
+Version: 0.9.7
 Summary: A p2p file transfer program via LAN.
 Home-page: https://github.com/XieGuochao/polarishub
 Author: Xie Guochao & Hao Senyue
@@ -19,7 +19,7 @@ Description:
         
         ```python
         from polarishub import setup
-        initialization()
+        setup.initialization()
         ```
         
         Then run this script file to setup the essential environment for polarishub.
@@ -30,7 +30,7 @@ Description:
         
         ```python
         from polarishub import manage
-        runserver(ipAddress, port)
+        manage.runserver(ipAddress, port)
         # here ipAddress and port are default as "0.0.0.0" and "8000"
         # if you want to change them, you should use your own address and port.
         ```

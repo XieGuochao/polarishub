@@ -10,7 +10,7 @@ To run the library correctly, you should first create a Python script file to se
 
 ```python
 from polarishub import setup
-initialization()
+setup.initialization()
 ```
 
 Then run this script file to setup the essential environment for polarishub.
@@ -21,7 +21,7 @@ To run the polarishub on your computer, you should write another Python script f
 
 ```python
 from polarishub import manage
-runserver(ipAddress, port)
+manage.runserver(ipAddress, port)
 # here ipAddress and port are default as "0.0.0.0" and "8000"
 # if you want to change them, you should use your own address and port.
 ```

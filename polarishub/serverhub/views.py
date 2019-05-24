@@ -4,8 +4,8 @@ import os
 from os.path import join, expanduser
 import json
 import socket
-import api
-from serverhub.myqrcode import generateCode
+import polarishub.api
+from polarishub.serverhub.myqrcode import generateCode
 import hashlib
 from requests.utils import quote
 

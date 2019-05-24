@@ -9,7 +9,7 @@ URL = "https://github.com/XieGuochao/polarishub"
 EMAIL = 'senyuehao@link.cuhk.edu.cn'
 AUTHOR = 'Xie Guochao & Hao Senyue'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.9.0'
+VERSION = '0.9.7'
 
 REQUIRED = [
     'Django>=2.1.5','MyQR==2.3.1'
