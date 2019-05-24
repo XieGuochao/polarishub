@@ -15,6 +15,7 @@ REQUIRED = [
     'Django>=2.1.5','MyQR==2.3.1'
 ]
 
+here = os.path.abspath(os.path.dirname(__file__))
 try:
     with io.open(os.path.join(here, 'ReadMe for Python Library.md'), encoding='utf-8') as f:
         long_description = '\n' + f.read()
@@ -33,7 +34,6 @@ setup(
     url=URL,
     packages=find_packages(),
     install_requires=REQUIRED,
-    extras_require=EXTRAS,
     include_package_data=True,
     license='MIT',
     classifiers=[
