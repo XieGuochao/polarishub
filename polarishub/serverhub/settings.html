@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Settings</h1> 
+    <h3>Passwords</h3>
+    <div style="display: flex; flex-direction: row; min-width: 20rem;">
+        <p id='p0'>Name</p>
+        <input id='i0' style="margin: 0 2rem; align-self: flex-end" placeholder="null to delete password"></input>
+        <button id='0' style="align-self: flex-end" onclick="changePassword(0)">Change Password</button>
+    </div>
+    <p>Hints:<br>
+            changeAdminPassword?oldp=___&newp=___<br>
+            changeSetting?key=___&value=___&password=___<br>
+            changePassword?key=___&value=___&password=___</p>
+    <script>
+        function changePassword(i){
+            var name = document.getElementById("p"+i).innerText;
+            var password = document.getElementById("i"+i).value;
+            console.log(name, password);
+            window.open("changePassword?key="+name+"&value="+password);
+        }
+    </script>
+</body>
+</html>
