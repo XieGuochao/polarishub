@@ -42,18 +42,20 @@ def init_files(path):
 
     print("Setup finished!")
 
-if not make_dir(ROOT):
-    while True:
-        clear = input("Do you want to reset your all settings (Y/N)? ")
-        if clear == "Y" or clear == 'y':
-            shutil.rmtree(ROOT)
-            os.mkdir(ROOT)
-            break
-        elif clear == "N" or clear == 'n':
-            input("Enter to exit.")
-            exit()
-        else:
-            print("Please Enter Y / N")
+def initialization():
+    if not make_dir(ROOT):
+        while True:
+            clear = input("Do you want to reset your all settings (Y/N)? ")
+            if clear == "Y" or clear == 'y':
+                shutil.rmtree(ROOT)
+                os.mkdir(ROOT)
+                break
+            elif clear == "N" or clear == 'n':
+                input("Enter to exit.")
+                return
+            else:
+                print("Please Enter Y / N")
 
-init_files(ROOT)
-input("Enter to exit.")
+    init_files(ROOT)
+    input("Enter to exit.")
+    return
