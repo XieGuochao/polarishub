@@ -1,0 +1,6 @@
+[console_scripts]
+phub-run = polarishub.command_line2:runHub
+phub-setup = polarishub.command_line:operation
+polarishub-run = polarishub.command_line2:runHub
+polarishub-setup = polarishub.command_line:operation
+

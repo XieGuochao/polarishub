@@ -4,24 +4,35 @@
 
 This is a p2p file transfer program via LAN.
 
-This program is implemented with Django Framework. External libraries required: MyQR for generating QR code.
+This program is implemented with Django Framework.
 
-To run the library correctly, you should first create a Python script file to setup polarishub on your computer. In this Python script file, only two lines will be include.
+External libraries required: MyQR for generating QR code.
 
-```python
-from polarishub import setup
-setup.initialization()
+#### Update version 0.9.12 (Important)
+
+We have add console script for our library.
+
+After install our library, you can keep your console open, and continuing typing
+
+```cmd
+polarishub-setup
 ```
 
-Then run this script file to setup the essential environment for polarishub.
+to setup the environment of our library, and type
 
-
-
-To run the polarishub on your computer, you should write another Python script file:
-
-```python
-from polarishub import manage
-manage.runserver(ipAddress, port)
-# here ipAddress and port are default as "0.0.0.0" and "8000"
-# if you want to change them, you should use your own address and port.
 ```
+polarishub-run
+```
+
+to run our library.
+
+Make sure you first set up the environment, and then run.
+
+In short, you can just type:
+
+```
+phub-setup
+phub-run
+```
+
+for efficient use.

@@ -2,11 +2,14 @@ README.md
 setup.py
 polarishub/__init__.py
 polarishub/api.py
+polarishub/command_line.py
+polarishub/command_line2.py
 polarishub/manage.py
 polarishub/setup.py
 polarishub.egg-info/PKG-INFO
 polarishub.egg-info/SOURCES.txt
 polarishub.egg-info/dependency_links.txt
+polarishub.egg-info/entry_points.txt
 polarishub.egg-info/requires.txt
 polarishub.egg-info/top_level.txt
 polarishub/phub/__init__.py

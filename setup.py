@@ -9,7 +9,7 @@ URL = "https://github.com/XieGuochao/polarishub"
 EMAIL = 'senyuehao@link.cuhk.edu.cn'
 AUTHOR = 'Xie Guochao & Hao Senyue'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.9.7'
+VERSION = '0.9.12'
 
 REQUIRED = [
     'Django>=2.1.5','MyQR==2.3.1'
@@ -36,6 +36,13 @@ setup(
     install_requires=REQUIRED,
     include_package_data=True,
     license='MIT',
+    entry_points = {
+        'console_scripts': ['polarishub-setup=polarishub.command_line:operation', 
+                            'polarishub-run=polarishub.command_line2:runHub',
+                            'phub-setup=polarishub.command_line:operation',
+                            'phub-run=polarishub.command_line2:runHub'
+                           ]
+    },
     classifiers=[
         'License :: OSI Approved :: MIT License',
         "Operating System :: OS Independent",
