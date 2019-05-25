@@ -1,5 +1,4 @@
-from __future__ import print_function
-from setuptools import setup, find_packages, Command
+from setuptools import setup, find_packages
 import sys
 import io, os
 
@@ -9,7 +8,7 @@ URL = "https://github.com/XieGuochao/polarishub"
 EMAIL = 'senyuehao@link.cuhk.edu.cn'
 AUTHOR = 'Xie Guochao & Hao Senyue'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.9.12'
+VERSION = '0.9.16'
 
 REQUIRED = [
     'Django>=2.1.5','MyQR==2.3.1'
@@ -37,11 +36,8 @@ setup(
     include_package_data=True,
     license='MIT',
     entry_points = {
-        'console_scripts': ['polarishub-setup=polarishub.command_line:operation', 
-                            'polarishub-run=polarishub.command_line2:runHub',
-                            'phub-setup=polarishub.command_line:operation',
-                            'phub-run=polarishub.command_line2:runHub'
-                           ]
+        'console_scripts': ['polarishub=polarishub.command_line:main',
+                            'phub=polarishub.command_line:main']
     },
     classifiers=[
         'License :: OSI Approved :: MIT License',

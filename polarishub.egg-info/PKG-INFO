@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: polarishub
-Version: 0.9.12
+Version: 0.9.16
 Summary: A p2p file transfer program via LAN.
 Home-page: https://github.com/XieGuochao/polarishub
 Author: Xie Guochao & Hao Senyue
@@ -17,20 +17,20 @@ Description:
         
         External libraries required: MyQR for generating QR code.
         
-        #### Update version 0.9.12 (Important)
+        #### Update version 0.9.16 (Important)
         
         We have add console script for our library.
         
         After install our library, you can keep your console open, and continuing typing
         
         ```cmd
-        polarishub-setup
+        polarishub setup
         ```
         
         to setup the environment of our library, and type
         
         ```
-        polarishub-run
+        polarishub run
         ```
         
         to run our library.
@@ -40,11 +40,20 @@ Description:
         In short, you can just type:
         
         ```
-        phub-setup
-        phub-run
+        phub setup
+        phub run
         ```
         
         for efficient use.
+        
+        You can also use
+        
+        ```
+        polarishub -h
+        phub -h
+        ```
+        
+        to check the help information.
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent

@@ -1,6 +1,4 @@
-#!/usr/bin/env python
 import os
-import sys
 
 def runserver(ipAddress="0.0.0.0", port="8000"):
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'polarishub.phub.settings')
